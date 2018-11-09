@@ -68,7 +68,19 @@ signingIn = (theID) => {
         <div className="col s1">
         </div>
       </div>
-
+      <div className="row">
+        <div className="col s2">
+        </div>
+        <div className="col s8 offset-s1">
+          <NavLink to='/register' className="white-text" >
+            <button className="waves-effect waves-light btn-large orange darken-1">
+              <b>Sign Up</b>
+            </button>
+          </NavLink>
+        </div>
+        <div className="col s1">
+        </div>
+      </div>
     </div>
 
 
