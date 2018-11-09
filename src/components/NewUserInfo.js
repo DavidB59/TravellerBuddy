@@ -49,18 +49,22 @@ render(){
       <h4>Personal data</h4>
       <div className="row">
         <div className="input-field col s6 offset-s3">
+          {this.props.currentUser.firstName ? <h5> {this.props.currentUser.firstName}</h5> : console.log('') }
           <input id="destination2" placeholder="first name" type="text" onChange={this.firstname}/>
           <label for="destination2"></label>
         </div>
         <div className="input-field col s6 offset-s3">
+        {this.props.currentUser.lastName ? <h5> {this.props.currentUser.lastName}</h5> : console.log('') }
           <input id="destination2" placeholder="last name" type="text" onChange={this.lastname}/>
           <label for="destination2"></label>
         </div>
         <div className="input-field col s6 offset-s3">
+        {this.props.currentUser.age ? <h5>{this.props.currentUser.age}</h5> : console.log('') }
           <input id="destination2" placeholder="age" type="text" onChange={this.age}/>
           <label for="destination2"></label>
         </div>
         <div className="input-field col s6 offset-s3">
+        {this.props.currentUser.location ? <h5>{this.props.currentUser.location}</h5> : console.log('') }
           <input id="destination2" placeholder="location" type="text" onChange={this.location}/>
           <label for="destination2"></label>
         </div>
